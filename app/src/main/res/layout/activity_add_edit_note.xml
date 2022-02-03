@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditNoteActivity">
+
+
+    <EditText
+        android:id="@+id/editNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Note Title"
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/purple_200"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/editNoteDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Note Description"
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/purple_200"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/editNoteTitle"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        />
+    <Button
+        android:id="@+id/edit_save_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/purple_200"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        />
+</RelativeLayout>
